@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="16dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/blue_box">
 
             <ImageView
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="10)  DESLOCAMENTO PARA TRABALHO (PARA PESSOA QUE TRABALHA)"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             android:textColor="#000000"
             android:layout_marginTop="24dp" />
 
@@ -41,7 +42,7 @@
             android:layout_height="wrap_content"
             android:text="ALGUM MORADOR DA RESIDÊNCIA TRABALHA?"
             android:textSize="14sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             android:textColor="#000000"
             android:layout_marginTop="16dp" />
 
@@ -58,12 +59,14 @@
                 android:id="@+id/radioSim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Sim" />
 
             <RadioButton
                 android:id="@+id/radioNao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Não" />
         </RadioGroup>
 
@@ -73,7 +76,7 @@
             android:layout_height="wrap_content"
             android:text="EM QUE MUNICÍPIO OU PAÍS ESTRANGEIRO TRABALHA?"
             android:textSize="14sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             android:textColor="#000000"
             android:layout_marginTop="16dp" />
 
@@ -90,24 +93,28 @@
                 android:id="@+id/radioCasa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Apenas em casa ou na propriedade/neste município" />
 
             <RadioButton
                 android:id="@+id/radioForaCasa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Fora de casa e da propriedade/neste município" />
 
             <RadioButton
                 android:id="@+id/radioOutroMunicipio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Em outro município do Brasil" />
 
             <RadioButton
                 android:id="@+id/radioOutroPais"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Em outro país" />
         </RadioGroup>
 
@@ -125,6 +132,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Voltar"
                 android:backgroundTint="#d6eef0"
                 android:textColor="#006680"
@@ -135,6 +143,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Próximo"
                 android:backgroundTint="#006680"
                 android:textColor="@android:color/white"

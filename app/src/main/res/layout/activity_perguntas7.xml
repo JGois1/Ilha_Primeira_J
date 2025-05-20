@@ -16,6 +16,7 @@
             android:layout_height="158dp"
             android:background="@drawable/blue_box"
             android:gravity="center"
+            android:layout_marginTop="25dp"
             android:padding="17dp">
 
             <ImageView
@@ -52,6 +53,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="#d6eef0"
                 android:textColor="#006680"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Anterior"
                 />
 
@@ -62,6 +64,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#006680"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Próximo"
                 android:textColor="@android:color/white" />
         </LinearLayout>

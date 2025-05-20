@@ -38,6 +38,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun isValidLogin(email: String, password: String): Boolean {
-        return email == "usuario@exemplo.com" && password == "123456"
+        //return email == "usuario@exemplo.com" && password == "123456"
+        return email == "123" && password == "123"
     }
 }

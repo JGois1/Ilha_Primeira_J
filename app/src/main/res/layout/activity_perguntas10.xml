@@ -17,7 +17,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:background="@drawable/blue_box"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_marginTop="25dp">
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -31,13 +32,14 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
+            android:fontFamily="@font/manrope_semibold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:text="DESLOCAMENTO PARA TRABALHO (PARA PESSOA QUE TRABALHA)"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -47,6 +49,7 @@
             android:text="ALGUM MORADOR DA RESIDÊNCIA TRABALHA?"
             android:textSize="16sp"
             android:layout_marginTop="16dp"
+            android:fontFamily="@font/manrope_semibold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -67,11 +70,13 @@
                 <RadioButton
                     android:id="@+id/radioSim"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:layout_height="wrap_content"
                     android:text="Sim" />
                 <RadioButton
                     android:id="@+id/radioNao"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:layout_height="wrap_content"
                     android:text="Não" />
             </RadioGroup>
@@ -144,6 +149,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#D6EEF0"
                 android:textColor="#006680"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Voltar" />
 
             <Button
@@ -152,6 +158,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Próximo"
+                android:fontFamily="@font/manrope_semibold"
                 android:backgroundTint="#006680"
                 android:textColor="#FFFFFF"
                 android:layout_marginStart="8dp"/>

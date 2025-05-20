@@ -17,6 +17,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:background="@drawable/blue_box"
+            android:layout_marginTop="25dp"
             android:padding="16dp">
 
             <ImageView
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:text="11)"
             android:textStyle="bold"
+            android:fontFamily="@font/manrope_semibold"
             android:textSize="18sp"
             android:layout_marginTop="16dp" />
 
@@ -42,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="RELIGIÃO OU CULTO"
+            android:fontFamily="@font/manrope_bold"
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginTop="8dp" />
@@ -51,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="QUAL SUA RELIGIÃO OU CULTO?"
+            android:fontFamily="@font/manrope_semibold"
             android:textSize="16sp"
             android:layout_marginTop="16dp" />
 
@@ -73,36 +77,43 @@
                 <RadioButton android:id="@+id/radioCristianismo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:text="Cristianismo" />
 
                 <RadioButton android:id="@+id/radioIslamismo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:text="Islamismo" />
 
                 <RadioButton android:id="@+id/radioHinduismo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:text="Hinduísmo" />
 
                 <RadioButton android:id="@+id/radioBudismo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:text="Budismo" />
 
                 <RadioButton android:id="@+id/radioJudaismo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:text="Judaísmo" />
 
                 <RadioButton android:id="@+id/radioEspiritismo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:text="Espiritismo" />
 
                 <RadioButton android:id="@+id/radioOutra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_semibold"
                     android:text="Outra" />
             </RadioGroup>
         </LinearLayout>
@@ -121,6 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#D6EEF0"
+                android:fontFamily="@font/manrope_semibold"
                 android:textColor="#006680"
                 android:text="Voltar" />
 
@@ -129,6 +141,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Proximo"
                 android:backgroundTint="#006680"
                 android:textColor="#FFFFFF"

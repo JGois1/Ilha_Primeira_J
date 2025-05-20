@@ -17,6 +17,7 @@
             android:gravity="center"
             android:orientation="vertical"
             android:background="@drawable/blue_box"
+            android:layout_marginTop="25dp"
             android:padding="16dp">
             <ImageView
                 android:layout_width="120dp"
@@ -29,7 +30,7 @@
         <TextView
             android:text="8)"
             android:textSize="18sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -37,7 +38,7 @@
         <TextView
             android:text="PESSOAS COM DEFICIÊNCIA (IDADE: 2 ANOS+)"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -48,6 +49,7 @@
             android:textSize="16sp"
             android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/manrope_semibold"
             android:layout_height="wrap_content" />
 
         <LinearLayout
@@ -66,13 +68,13 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton android:id="@+id/radioVisao1" android:text="Tem, não consegue de modo algum"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold" />
                 <RadioButton android:id="@+id/radioVisao2" android:text="Tem muita dificuldade"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold"/>
                 <RadioButton android:id="@+id/radioVisao3" android:text="Tem alguma dificuldade"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold"/>
                 <RadioButton android:id="@+id/radioVisao4" android:text="Não tem dificuldade"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold"/>
             </RadioGroup>
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:textSize="16sp"
             android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/manrope_semibold"
             android:layout_height="wrap_content" />
 
         <LinearLayout
@@ -100,13 +103,13 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton android:id="@+id/radioAudicao1" android:text="Tem, não consegue de modo algum"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold"/>
                 <RadioButton android:id="@+id/radioAudicao2" android:text="Tem muita dificuldade"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold"/>
                 <RadioButton android:id="@+id/radioAudicao3" android:text="Tem alguma dificuldade"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold"/>
                 <RadioButton android:id="@+id/radioAudicao4" android:text="Não tem dificuldade"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/manrope_semibold"/>
             </RadioGroup>
         </LinearLayout>
 
@@ -133,6 +136,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Próximo"
+                android:fontFamily="@font/manrope_semibold"
                 android:backgroundTint="#006680"
                 android:textColor="#FFFFFF"
                 android:layout_marginStart="8dp"/>

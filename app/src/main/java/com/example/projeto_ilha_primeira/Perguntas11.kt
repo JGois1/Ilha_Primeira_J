@@ -34,7 +34,7 @@ class Perguntas11 : AppCompatActivity() {
         }
 
         btnVoltar.setOnClickListener {
-            val intent = Intent(this, Perguntas10_1::class.java)
+            val intent = Intent(this, Perguntas10::class.java)
             startActivity(intent)
             finish()
         }

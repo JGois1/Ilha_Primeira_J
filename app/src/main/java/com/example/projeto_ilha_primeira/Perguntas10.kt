@@ -30,7 +30,7 @@ class Perguntas10 : AppCompatActivity() {
                 Toast.makeText(this, "Selecione uma opção", Toast.LENGTH_SHORT).show()
             } else {
                 // Ir para a próxima página (Perguntas10_1)
-                val intent = Intent(this, Perguntas10_1::class.java)
+                val intent = Intent(this, Perguntas11::class.java)
                 startActivity(intent)
             }
         }

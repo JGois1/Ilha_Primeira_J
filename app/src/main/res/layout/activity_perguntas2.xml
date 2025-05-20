@@ -15,6 +15,7 @@
             android:layout_height="158dp"
             android:background="@drawable/blue_box"
             android:gravity="center"
+            android:layout_marginTop="25dp"
             android:padding="17dp">
 
             <ImageView
@@ -43,8 +44,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=" INFORMAÇÕES SOBRE OS MORADORES"
-                android:textStyle="bold"
-                android:textSize="16sp"
+                android:fontFamily="@font/manrope_bold"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 android:layout_marginStart="8dp" />
         </LinearLayout>
@@ -53,36 +54,254 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="QUANTAS PESSOAS MORAM NA RESIDÊNCIA?"
-            android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             android:layout_marginTop="24dp"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textColor="#000000" />
 
         <LinearLayout
+            android:background="@drawable/blue_box"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnerMoradores"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerPerguntasAdicionais"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:background="@drawable/blue_box"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            android:gravity="center_vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <EditText
-                android:id="@+id/ruaEditText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Selecione o número:"
-                android:background="@android:drawable/edit_text" />
-
-            <ImageView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/arrow_up"
-                android:contentDescription="Ícone de dropdown"
-                android:layout_marginStart="8dp" />
+                android:text="NOME COMPLETO, DATA DE NASCIMENTO E SEXO:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/blue_box"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nome completo:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/nomeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Insira o nome"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data de nascimento:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/dataEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="00/00/0000"
+                    android:inputType="number" />
+
+                <RadioGroup
+                    android:id="@+id/sexoRadioGroup"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioMasc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masculino" />
+                    <RadioButton
+                        android:id="@+id/radioFem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feminino" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RELAÇÃO DE PARENTESCO COM A PESSOA RESPONSÁVEL PELO DOMICÍLIO:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp" />
+
+            <RadioGroup
+                android:id="@+id/domicilioRadioGroup"
+                android:orientation="vertical"
+                android:background="@drawable/blue_box"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cônjuge ou companheiro(a) de sexo diferente" />
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cônjuge ou companheiro(a) do mesmo sexo" />
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filho(a) do responsável e do cônjuge" />
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filho(a) somente do responsável" />
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genro ou nora" />
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pai, mãe, padrasto ou madrasta" />
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sogro(a)" />
+                <RadioButton
+                    android:id="@+id/radio8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neto(a)" />
+                <RadioButton
+                    android:id="@+id/radio9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enteado(a)" />
+                <RadioButton
+                    android:id="@+id/radio10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Irmão ou irmã" />
+                <RadioButton
+                    android:id="@+id/radio11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avô ou avó" />
+                <RadioButton
+                    android:id="@+id/radio12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Empregado(a) doméstico(a)" />
+                <RadioButton
+                    android:id="@+id/radio13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parente do(a) empregado(a) doméstico(a)" />
+                <RadioButton
+                    android:id="@+id/radio14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Individual em domicílio coletivo" />
+                <RadioButton
+                    android:id="@+id/radio15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outros" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ESTE DOMICÍLIO É:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/manrope_semibold"
+                android:layout_marginTop="16dp" />
+
+            <RadioGroup
+                android:id="@+id/domicilioEhRadioGroup"
+                android:orientation="vertical"
+                android:background="@drawable/blue_box"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Próprio de algum morador cedido ou emprestado" />
+                <RadioButton
+                    android:id="@+id/radio17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ainda pagando" />
+                <RadioButton
+                    android:id="@+id/radio18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alugado" />
+                <RadioButton
+                    android:id="@+id/radio19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Por empregador" />
+                <RadioButton
+                    android:id="@+id/radio20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Por familiar" />
+                <RadioButton
+                    android:id="@+id/radio21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Já pago, herdado ou ganho" />
+                <RadioButton
+                    android:id="@+id/radio22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro forma" />
+
+            </RadioGroup>
 
         </LinearLayout>
 
@@ -102,6 +321,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="#d6eef0"
                 android:textColor="#006680"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Anterior"
                 />
 
@@ -112,6 +332,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#006680"
+                android:fontFamily="@font/manrope_semibold"
                 android:text="Próximo"
                 android:textColor="@android:color/white" />
         </LinearLayout>
