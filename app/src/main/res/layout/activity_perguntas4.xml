@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Header com imagem -->
         <LinearLayout
-            android:layout_width="380dp"
-            android:layout_height="158dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/blue_box"
             android:gravity="center"
+            android:orientation="vertical"
             android:layout_marginTop="25dp"
-            android:padding="17dp">
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/logoImageView"
@@ -27,21 +27,77 @@
                 android:src="@drawable/imagem1" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:textStyle="bold"
-            android:layout_marginTop="24dp"
-            android:textSize="16sp"
-            android:textColor="#000000" />
-
-        <!-- Botões lado a lado -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Número da pergunta"
+                android:src="@drawable/numero4" /> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" REGISTRO CIVIL"
+            android:fontFamily="@font/manrope_bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEM REGISTRO DE NASCIMENTO:"
+            android:fontFamily="@font/manrope_semibold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:background="@drawable/blue_box"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radioGroupRegistroNascimento"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioRegistroCartorio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do cartório"
+                    android:fontFamily="@font/manrope_semibold"/>
+
+                <RadioButton
+                    android:id="@+id/radioRegistroNaoTem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não tem"
+                    android:fontFamily="@font/manrope_semibold"/>
+
+                <RadioButton
+                    android:id="@+id/radioRegistroNaoSabe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não sabe"
+                    android:fontFamily="@font/manrope_semibold"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
             android:gravity="center_horizontal"
             android:weightSum="2">
 
@@ -54,8 +110,7 @@
                 android:backgroundTint="#d6eef0"
                 android:fontFamily="@font/manrope_semibold"
                 android:textColor="#006680"
-                android:text="Anterior"
-                />
+                android:text="Anterior"/>
 
             <Button
                 android:id="@+id/btnNext"

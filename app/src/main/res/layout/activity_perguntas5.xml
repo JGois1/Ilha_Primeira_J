@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Header com imagem -->
         <LinearLayout
-            android:layout_width="380dp"
-            android:layout_height="158dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/blue_box"
             android:gravity="center"
+            android:orientation="vertical"
             android:layout_marginTop="25dp"
-            android:padding="17dp">
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/logoImageView"
@@ -27,22 +27,180 @@
                 android:src="@drawable/imagem1" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5"
-            android:textStyle="bold"
-            android:layout_marginTop="24dp"
-            android:textSize="16sp"
-            android:textColor="#000000" />
-
-        <!-- Botões lado a lado -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="16dp"
-            android:gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Número da pergunta"
+                android:src="@drawable/numero5" /> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" NUPCIALIDADE"
+            android:fontFamily="@font/manrope_bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POSSUI CÔNJUGE OU COMPANHEIRO:"
+            android:fontFamily="@font/manrope_semibold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:background="@drawable/blue_box"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radioGroupPossuiConjuge"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioPossuiConjugeSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:fontFamily="@font/manrope_semibold"/>
+
+                <RadioButton
+                    android:id="@+id/radioPossuiConjugeNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:fontFamily="@font/manrope_semibold"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerPerguntasConjugeAdicionais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIVEM EM COMPANHIA DE CÔNJUGE OU COMPANHEIRO:"
+                android:fontFamily="@font/manrope_semibold"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:background="@drawable/blue_box"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:id="@+id/radioGroupVivemCompanhia"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radioVivemCompanhiaSim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sim"
+                        android:fontFamily="@font/manrope_semibold"/>
+                    <RadioButton
+                        android:id="@+id/radioVivemCompanhiaNao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Não"
+                        android:fontFamily="@font/manrope_semibold"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOME DO CÔNJUGE/COMPANHEIRO(A):"
+                android:fontFamily="@font/manrope_semibold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+            <LinearLayout
+                android:background="@drawable/blue_box"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editTextNomeConjuge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Insira o nome:"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:inputType="textPersonName"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIPO DA UNIÃO:"
+                android:fontFamily="@font/manrope_semibold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+            <LinearLayout
+                android:background="@drawable/blue_box"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:id="@+id/radioGroupTipoUniao"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radioTipoUniaoCivilReligioso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Casamento civil e religioso"
+                        android:fontFamily="@font/manrope_semibold"/>
+                    <RadioButton
+                        android:id="@+id/radioTipoUniaoSoCivil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Só casamento civil"
+                        android:fontFamily="@font/manrope_semibold"/>
+                    <RadioButton
+                        android:id="@+id/radioTipoUniaoSoReligioso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Só casamento religioso"
+                        android:fontFamily="@font/manrope_semibold"/>
+                    <RadioButton
+                        android:id="@+id/radioTipoUniaoConsensual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="União consensual"
+                        android:fontFamily="@font/manrope_semibold"/>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp" android:gravity="center_horizontal"
             android:weightSum="2">
 
             <Button
@@ -54,8 +212,7 @@
                 android:backgroundTint="#d6eef0"
                 android:fontFamily="@font/manrope_semibold"
                 android:textColor="#006680"
-                android:text="Anterior"
-                />
+                android:text="Anterior"/>
 
             <Button
                 android:id="@+id/btnNext"

@@ -1,55 +1,42 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:background="#C7EAE9"
+    android:paddingTop="?attr/actionBarSize"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context=".MainActivity">
-
-    <!-- Imagem existente -->
-
-    <!-- Botão para navegar para a Tela de login -->
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="216dp"
         android:layout_height="339dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155"
-        app:srcCompat="@drawable/imagem1" />
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/imagem1"
+        android:contentDescription="Logo do Aplicativo" />
 
     <Button
         android:id="@+id/goToLoginButton"
-        android:layout_width="307dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
         android:backgroundTint="#006680"
         android:fontFamily="@font/manrope_semibold"
-        android:text="Login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        android:text="Login" />
 
-    <!--Criar intent para uma nova tela de cadastro-->
     <Button
         android:id="@+id/goToCadastroButton"
-        android:layout_width="310dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
         android:backgroundTint="#006680"
         android:fontFamily="@font/manrope_semibold"
-        android:text="Cadastro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.274" />
+        android:text="Cadastro" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

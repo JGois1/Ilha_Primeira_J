@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Header com imagem -->
         <LinearLayout
-            android:layout_width="380dp"
-            android:layout_height="158dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/blue_box"
             android:gravity="center"
+            android:orientation="vertical"
             android:layout_marginTop="25dp"
-            android:padding="17dp">
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/logoImageView"
@@ -27,16 +27,29 @@
                 android:src="@drawable/imagem1" />
         </LinearLayout>
 
-        <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:id="@+id/imagemNumero1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Número da pergunta 1"
+                android:src="@drawable/numero1" />  <TextView
+            android:id="@+id/textViewTituloPergunta1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1  IDENTIFICAÇÃO DE DOMICÍLIO:"
+            android:text=" IDENTIFICAÇÃO DE DOMICÍLIO"
             android:fontFamily="@font/manrope_bold"
-            android:layout_marginTop="24dp"
-            android:textSize="16sp"
-            android:textColor="#000000" />
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp" />
+        </LinearLayout>
 
-        <!-- Endereço -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +58,6 @@
             android:fontFamily="@font/manrope_bold"
             android:textColor="#000000" />
 
-        <!-- Bloco de rua e número -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,8 +69,7 @@
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"  android:layout_height="wrap_content"
                 android:text="RUA:"
                 android:fontFamily="@font/manrope_semibold"
                 android:textColor="#000000" />
@@ -75,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NÚMERO:"
-                android:textColor="#000000" />
+                android:fontFamily="@font/manrope_semibold" android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/numeroEditText"
@@ -86,7 +97,6 @@
                 android:inputType="number" />
         </LinearLayout>
 
-        <!-- Espécie de domicílio -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,28 +114,24 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radio1"
-                android:layout_width="wrap_content"
+                android:id="@+id/radioDomicilioParticularPermanenteOcupado" android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manrope_semibold"
                 android:text="DOMICÍLIO PARTICULAR PERMANENTE OCUPADO" />
 
             <RadioButton
-                android:id="@+id/radio2"
-                android:layout_width="wrap_content"
+                android:id="@+id/radioDomicilioParticularImprovisadoOcupado" android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manrope_semibold"
                 android:text="DOMICÍLIO PARTICULAR IMPROVISADO OCUPADO" />
 
             <RadioButton
-                android:id="@+id/radio3"
-                android:layout_width="wrap_content"
+                android:id="@+id/radioDomicilioColetivoComMorador" android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/manrope_semibold"
                 android:text="DOMICÍLIO COLETIVO COM MORADOR" />
         </RadioGroup>
 
-        <!-- Botões lado a lado -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -144,7 +150,7 @@
                 android:backgroundTint="#d6eef0"
                 android:textColor="#006680"
                 android:text="Anterior"
-                 />
+                />
 
             <Button
                 android:id="@+id/btnNext"
