@@ -23,6 +23,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Certifique-se de que o ID do botão em activity_main.xml é "goToCadastroButton"
+        val goToCadastroButton: Button = findViewById(R.id.goToCadastroButton)
+
+        // Configurar o clique do botão para abrir a CadastroActivity
+        goToCadastroButton.setOnClickListener {
+            val intent = Intent(this, CadastroActivity::class.java)
+            startActivity(intent)
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

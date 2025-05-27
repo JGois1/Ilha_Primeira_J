@@ -120,14 +120,4 @@
             android:layout_marginStart="8dp"/>
     </LinearLayout>
 
-    <!-- Link inferior -->
-    <TextView
-        android:id="@+id/textRetornarInicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Retornar ao início"
-        android:textColor="#006680"
-        android:layout_gravity="start"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/manrope_semibold"/>
 </LinearLayout>

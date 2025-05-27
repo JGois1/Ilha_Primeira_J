@@ -1,5 +1,6 @@
 package com.example.projeto_ilha_primeira
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -32,13 +33,26 @@ class LoginActivity : AppCompatActivity() {
                 errorMessage.visibility = TextView.GONE
                 val intent = Intent(this, Telainicial::class.java)
                 startActivity(intent)
-                finish() // Encerra a tela de login para que o usuário não volte ao apertar "voltar"
+                finish()
             }
         }
     }
 
     private fun isValidLogin(email: String, password: String): Boolean {
-        //return email == "usuario@exemplo.com" && password == "123456"
-        return email == "123" && password == "123"
+        val sharedPref = getSharedPreferences("usuarios", Context.MODE_PRIVATE)
+
+        if (!sharedPref.contains(email)) {
+            return false
+        }
+
+        val savedData = sharedPref.getString(email, null) ?: return false
+
+        // Separar os dados no formato "nome|senha"
+        val parts = savedData.split("|")
+        if (parts.size != 2) return false
+
+        val savedPassword = parts[1]
+
+        return password == savedPassword
     }
 }

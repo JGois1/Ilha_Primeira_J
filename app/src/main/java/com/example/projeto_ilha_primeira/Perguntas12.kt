@@ -12,7 +12,6 @@ class Perguntas12 : AppCompatActivity() {
     private lateinit var radioGroup: RadioGroup
     private lateinit var btnProximo: Button
     private lateinit var btnVoltar: Button
-    private lateinit var textRetornarInicio: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,26 +20,28 @@ class Perguntas12 : AppCompatActivity() {
         radioGroup = findViewById(R.id.radioGroupResposta)
         btnProximo = findViewById(R.id.btnProximo)
         btnVoltar = findViewById(R.id.btnVoltar)
-        textRetornarInicio = findViewById(R.id.textRetornarInicio)
+
+        //comentando para usar no futuro (salvamento das respostas)
+//        btnProximo.setOnClickListener {
+//            val selectedId = radioGroup.checkedRadioButtonId
+//            if (selectedId != -1) {
+//                val resposta = findViewById<RadioButton>(selectedId).text.toString()
+//                // Aqui você pode salvar ou enviar a resposta
+//                Toast.makeText(this, "Resposta: $resposta", Toast.LENGTH_SHORT).show()
+//                // startActivity(Intent(this, ProximaActivity::class.java))
+//            } else {
+//                Toast.makeText(this, "Selecione uma opção.", Toast.LENGTH_SHORT).show()
+//            }
+//        }
 
         btnProximo.setOnClickListener {
-            val selectedId = radioGroup.checkedRadioButtonId
-            if (selectedId != -1) {
-                val resposta = findViewById<RadioButton>(selectedId).text.toString()
-                // Aqui você pode salvar ou enviar a resposta
-                Toast.makeText(this, "Resposta: $resposta", Toast.LENGTH_SHORT).show()
-                // startActivity(Intent(this, ProximaActivity::class.java))
-            } else {
-                Toast.makeText(this, "Selecione uma opção.", Toast.LENGTH_SHORT).show()
-            }
+            val intent = Intent(this, ConclusaoActivity::class.java)
+            startActivity(intent)
         }
 
         btnVoltar.setOnClickListener {
             finish() // ou startActivity(Intent(this, PerguntaAnterior::class.java))
         }
 
-        textRetornarInicio.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
     }
 }

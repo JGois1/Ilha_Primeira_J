@@ -39,9 +39,5 @@ class Perguntas11 : AppCompatActivity() {
             finish()
         }
 
-        textRetornarInicio.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-        }
     }
 }
