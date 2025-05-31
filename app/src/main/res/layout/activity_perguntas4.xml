@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fillViewport="true">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/blue_box"
-            android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginTop="25dp"
-            android:padding="16dp">
+            android:gravity="center"
+            android:background="@drawable/blue_container"
+            android:paddingTop="48dp"
+            android:paddingBottom="16dp">
 
             <ImageView
                 android:id="@+id/logoImageView"
@@ -32,43 +33,53 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="24dp">
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
 
             <ImageView
+                android:id="@+id/imagemNumero4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:contentDescription="Número da pergunta"
-                android:src="@drawable/numero4" /> <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" REGISTRO CIVIL"
-            android:fontFamily="@font/manrope_bold"
-            android:textSize="18sp"
-            android:textColor="#000000"
-            android:layout_marginStart="8dp" />
+                android:contentDescription="Número da pergunta 4"
+                android:src="@drawable/numero4" />
+
+            <TextView
+                android:id="@+id/textViewTituloPergunta4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text=" REGISTRO CIVIL"
+                android:fontFamily="@font/manrope_bold"
+                android:textSize="18sp"
+                android:textColor="#000000" />
         </LinearLayout>
 
-
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:text="TEM REGISTRO DE NASCIMENTO:"
             android:fontFamily="@font/manrope_semibold"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp" />
+            android:textSize="16sp" />
 
         <LinearLayout
-            android:background="@drawable/blue_box"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical"
-            android:padding="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/blue_box"
+            android:orientation="vertical"
+            android:padding="16dp">
+
             <RadioGroup
                 android:id="@+id/radioGroupRegistroNascimento"
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/radioRegistroCartorio"
@@ -81,6 +92,7 @@
                     android:id="@+id/radioRegistroNaoTem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="Não tem"
                     android:fontFamily="@font/manrope_semibold"/>
 
@@ -88,6 +100,7 @@
                     android:id="@+id/radioRegistroNaoSabe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="Não sabe"
                     android:fontFamily="@font/manrope_semibold"/>
             </RadioGroup>
@@ -97,9 +110,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="32dp"
             android:gravity="center_horizontal"
-            android:weightSum="2">
+            android:weightSum="2"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
 
             <Button
                 android:id="@+id/btnPrevious"
@@ -108,9 +124,9 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="#d6eef0"
-                android:fontFamily="@font/manrope_semibold"
+                android:text="Anterior"
                 android:textColor="#006680"
-                android:text="Anterior"/>
+                android:fontFamily="@font/manrope_semibold"/>
 
             <Button
                 android:id="@+id/btnNext"
@@ -119,10 +135,9 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#006680"
-                android:fontFamily="@font/manrope_semibold"
                 android:text="Próximo"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/manrope_semibold"/>
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>

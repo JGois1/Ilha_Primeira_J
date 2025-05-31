@@ -2,28 +2,27 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="vertical">
 
-        <!-- Logo -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@drawable/blue_box"
-            android:layout_marginTop="25dp"
-            android:padding="16dp">
+            android:background="@drawable/blue_container"
+            android:paddingTop="48dp"
+            android:paddingBottom="16dp">
+
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/imagem1"
-
                 android:contentDescription="Logo" />
         </LinearLayout>
 
@@ -32,41 +31,48 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="24dp">
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
 
             <ImageView
-                android:id="@+id/imagemNumero1"
+                android:id="@+id/imagemNumero9"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:contentDescription="Número da pergunta 8"
-                android:src="@drawable/numero9" />  <TextView
-            android:id="@+id/textViewTituloPergunta9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EDUCAÇÃO ( IDADE: 5ANOS+)"
-            android:fontFamily="@font/manrope_bold"
-            android:textSize="18sp"
-            android:textColor="#000000"
-            android:layout_marginStart="8dp" />
+                android:src="@drawable/numero9"
+                android:contentDescription="Número da pergunta 9" />
+
+            <TextView
+                android:id="@+id/textViewTituloPergunta9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="EDUCAÇÃO ( IDADE: 5ANOS+)"
+                android:fontFamily="@font/manrope_bold"
+                android:textSize="18sp"
+                android:textColor="#000000" />
         </LinearLayout>
 
-        <!-- Pergunta 1 -->
         <TextView
-            android:text="QUANTAS PESSOAS SABEM LER E ESCREVER?"
-            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="QUANTAS PESSOAS SABEM LER E ESCREVER?"
             android:fontFamily="@font/manrope_semibold"
-            android:layout_height="wrap_content" />
+            android:textSize="16sp" />
 
         <LinearLayout
-            android:background="@drawable/blue_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/blue_box"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:padding="16dp">
 
             <Spinner
                 android:id="@+id/spinnerAlfabetizados"
@@ -74,74 +80,81 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-        <!-- Pergunta 2 -->
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:text="FREQUENTA ESCOLA OU CRECHE? (Escola inclui desde cursos da pré-escola até o doutorado)"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
             android:fontFamily="@font/manrope_semibold"
-            android:layout_height="wrap_content" />
+            android:textSize="16sp" />
 
         <RadioGroup
             android:id="@+id/radioGroupEscolaridade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/blue_box"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="24dp">
+            android:padding="16dp">
 
             <RadioButton
                 android:id="@+id/radioSim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/manrope_semibold"
-                android:text="Sim" />
+                android:text="Sim"
+                android:fontFamily="@font/manrope_semibold" />
 
             <RadioButton
                 android:id="@+id/radioNaoMasFrequentou"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/manrope_semibold"
-                android:text="Não, mas já frequentou" />
+                android:layout_marginTop="8dp"
+                android:text="Não, mas já frequentou"
+                android:fontFamily="@font/manrope_semibold" />
 
             <RadioButton
                 android:id="@+id/radioNuncaFrequentou"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/manrope_semibold"
-                android:text="Não, nunca frequentou" />
+                android:layout_marginTop="8dp"
+                android:text="Não, nunca frequentou"
+                android:fontFamily="@font/manrope_semibold" />
         </RadioGroup>
 
-        <!-- Botões -->
         <LinearLayout
-            android:orientation="horizontal"
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2">
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp">
 
             <Button
                 android:id="@+id/btnVoltar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/manrope_semibold"
                 android:backgroundTint="#D6EEF0"
+                android:text="Anterior"
                 android:textColor="#006680"
-                android:text="Voltar" />
+                android:fontFamily="@font/manrope_semibold" />
 
             <Button
                 android:id="@+id/btnProximo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Próximo"
-                android:fontFamily="@font/manrope_semibold"
+                android:layout_marginStart="8dp"
                 android:backgroundTint="#006680"
+                android:text="Próximo"
                 android:textColor="#FFFFFF"
-                android:layout_marginStart="8dp" />
+                android:fontFamily="@font/manrope_semibold" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

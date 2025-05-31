@@ -2,71 +2,92 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fillViewport="true">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
+        android:id="@+id/layoutPerguntas12Content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
 
-        <!-- Header com imagem -->
         <LinearLayout
-            android:layout_width="380dp"
-            android:layout_height="158dp"
-            android:background="@drawable/blue_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_container"
             android:gravity="center"
-            android:layout_marginTop="25dp"
-            android:padding="17dp">
+            android:orientation="vertical"
+            android:paddingTop="48dp"
+            android:paddingBottom="16dp">
 
             <ImageView
-                android:id="@+id/logoImageView"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:contentDescription="Logo"
+                android:id="@+id/imageLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="Logo AMIP"
                 android:src="@drawable/imagem1" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6"
-            android:textStyle="bold"
-            android:layout_marginTop="24dp"
-            android:textSize="16sp"
-            android:textColor="#000000" />
-
-        <!-- Botões lado a lado -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="16dp"
-            android:gravity="center_horizontal"
-            android:weightSum="2">
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/numero6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Número da pergunta 12"
+                android:src="@drawable/numero6" />
+
+            <TextView
+                android:id="@+id/textViewTituloPergunta12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRABALHO E RENDIMENTO"
+                android:fontFamily="@font/manrope_bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp">
 
             <Button
                 android:id="@+id/btnPrevious"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginEnd="8dp"
-                android:backgroundTint="#d6eef0"
-                android:fontFamily="@font/manrope_semibold"
+                android:backgroundTint="#D6EEF0"
                 android:textColor="#006680"
                 android:text="Anterior"
-                />
+                android:fontFamily="@font/manrope_semibold"/>
 
             <Button
                 android:id="@+id/btnNext"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/manrope_semibold"
-                android:layout_marginStart="8dp"
+                android:text="Proximo"
                 android:backgroundTint="#006680"
-                android:text="Próximo"
-                android:textColor="@android:color/white" />
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
         </LinearLayout>
 
     </LinearLayout>

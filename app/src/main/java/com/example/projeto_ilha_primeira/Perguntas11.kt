@@ -19,7 +19,6 @@ class Perguntas11 : AppCompatActivity() {
         radioGroup = findViewById(R.id.radioGroupReligiao)
         btnProximo = findViewById(R.id.btnProximo)
         btnVoltar = findViewById(R.id.btnVoltar)
-        textRetornarInicio = findViewById(R.id.textRetornarInicio)
 
         btnProximo.setOnClickListener {
             val selectedId = radioGroup.checkedRadioButtonId
