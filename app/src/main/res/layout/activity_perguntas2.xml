@@ -114,35 +114,27 @@
                 android:background="@drawable/blue_box"
                 android:layout_gravity="center">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nome completo:"
-                    android:textColor="#000000"
-                    android:fontFamily="@font/manrope_semibold"/>
 
                 <EditText
-                    android:id="@+id/nomeEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/ruaEditText"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:hint="Nome completo" />
+
+                <EditText
+                    android:id="@+id/DataEditText"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="16dp"
                     android:layout_marginBottom="12dp"
-                    android:hint="Insira o nome"
-                    android:fontFamily="@font/manrope_semibold"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Data de nascimento:"
-                    android:textColor="#000000"
-                    android:fontFamily="@font/manrope_semibold"/>
-
-                <EditText
-                    android:id="@+id/dataEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="00/00/0000"
-                    android:inputType="date"
-                    android:fontFamily="@font/manrope_semibold"/>
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:hint="00/00/000" />
 
                 <RadioGroup
                     android:id="@+id/sexoRadioGroup"

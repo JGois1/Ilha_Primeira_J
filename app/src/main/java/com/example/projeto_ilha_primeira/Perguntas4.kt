@@ -8,15 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 class Perguntas4 : AppCompatActivity() {
 
     private lateinit var radioGroupRegistroNascimento: RadioGroup
-    // private lateinit var textRetornarInicioP4: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas4)
 
         radioGroupRegistroNascimento = findViewById(R.id.radioGroupRegistroNascimento)
-        //botão para voltar pra main.activty
-        //textRetornarInicioP4 = findViewById(R.id.textRetornarInicioP4)
 
         val nextButton = findViewById<Button>(R.id.btnNext)
         nextButton.setOnClickListener {

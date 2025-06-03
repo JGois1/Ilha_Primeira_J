@@ -81,31 +81,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RUA:"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/manrope_semibold"
                 android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/ruaEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="R. Marina do Sol"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rectangle"
                 android:fontFamily="@font/manrope_semibold"
-                android:layout_marginBottom="12dp" />
+                android:hint="R. Marina do Sol" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NÚMERO:"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/manrope_semibold"
                 android:textColor="#000000" />
 
             <EditText
-                android:id="@+id/numeroEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Insira o número"
+                android:id="@+id/NumeroEditText"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rectangle"
                 android:fontFamily="@font/manrope_semibold"
-                android:inputType="number" />
+                android:hint="Insira o número:" />
         </LinearLayout>
 
         <TextView

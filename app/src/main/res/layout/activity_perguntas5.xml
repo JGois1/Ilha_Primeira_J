@@ -168,12 +168,15 @@
                 android:padding="16dp">
 
                 <EditText
-                    android:id="@+id/editTextNomeConjuge"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Insira o nome:"
+                    android:id="@+id/nomeEditText"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle"
                     android:fontFamily="@font/manrope_semibold"
-                    android:inputType="textPersonName"/>
+                    android:hint="Insira o nome:" />
             </LinearLayout>
 
             <TextView
