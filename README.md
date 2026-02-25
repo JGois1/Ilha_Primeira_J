@@ -2,8 +2,6 @@
 
 Aplicativo Android nativo desenvolvido em **Kotlin** para atuar como ferramenta de recenseamento da Associação de Moradores da Ilha Primeira (AMIP), localizada na Barra da Tijuca, Rio de Janeiro. O objetivo é digitalizar e facilitar a coleta de dados demográficos, socioeconômicos e de infraestrutura dos moradores da região.
 
----
-
 ## Principais Funcionalidades
 
 O aplicativo guia o usuário através de um fluxo intuitivo e bem estruturado:
