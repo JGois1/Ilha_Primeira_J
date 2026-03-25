@@ -1,79 +1,78 @@
 📱 AMIP Census App – Ilha Primeira
 
-Android application developed in Kotlin to support the census process of the Associação de Moradores da Ilha Primeira (AMIP), located in Barra da Tijuca, Rio de Janeiro – Brazil.
+A native Android application developed in Kotlin designed to support the census process of the Associação de Moradores da Ilha Primeira (AMIP), located in Barra da Tijuca, Rio de Janeiro, Brazil.
 
-The main objective of this project is to digitalize and simplify the collection of demographic, socioeconomic, and infrastructure data from residents of Ilha Primeira, replacing manual data collection with a structured digital system.
+The application aims to digitalize and streamline the collection of demographic, socioeconomic, and infrastructure data from residents, replacing manual data collection with a structured and efficient mobile solution.
 
 👥 Team
 João Gois
 Caio Monteiro
-🚀 Features
-
-The application provides a guided and structured census workflow, allowing users to collect and submit information efficiently.
-
+🚀 Key Features
 🔐 User Authentication
 
-The app starts with an authentication system where users can:
+The application starts with an authentication flow that allows users to:
 
 Log in with an existing account
-Register as a new census taker or resident
+Register a new account for census participation
 
-After authentication, the home screen presents the purpose of the census and instructions for the data collection process.
+After authentication, users are directed to the home screen with information about the purpose of the census and instructions for completing the questionnaire.
 
 📝 Multi-Step Census Form
 
-To improve usability and prevent cognitive overload, the census questionnaire is divided into 12 sequential screens.
+To improve usability, the census questionnaire is divided into 12 sequential screens, allowing users to complete the process gradually.
 
-Navigation is handled through "Previous" and "Next" buttons, allowing users to review or edit previously entered information.
+Navigation between screens is performed using "Previous" and "Next" buttons, enabling users to review or update previously entered information.
 
-The questionnaire includes the following sections:
+The census collects information on:
 
-Household Identification and Housing Characteristics
-Employment and Income
+Household identification and housing characteristics
+Employment and income
 Education
-Health Information (including disabilities and autism)
-Civil Registration
-Marital Status
+Health conditions (including disabilities and autism)
+Civil registration
+Marital status
 Religion
-✅ Submission Confirmation
+✅ Data Submission
 
-After completing all steps, the application displays a confirmation screen, informing the user that the data has been successfully submitted and recorded.
+After completing all steps, the application displays a confirmation screen indicating that the information has been successfully submitted and recorded.
 
 🏗 Project Structure
 
-The project follows the standard Android application architecture.
+The project follows the standard Android project structure.
 
-app
- ├── src
- │   ├── main
- │   │   ├── java/com/example/projeto_ilha_primeira/
- │   │   │   └── Activity classes (Kotlin)
- │   │   │
- │   │   ├── res
- │   │   │   ├── layout/
- │   │   │   │   └── XML files defining each screen UI
- │   │   │   │
- │   │   │   ├── drawable/
- │   │   │   │   └── Images, icons, and visual assets
- │   │   │
- │   │   └── AndroidManifest.xml
+app/
+ ├── src/main/java/com/example/projeto_ilha_primeira/
+ │    └── Kotlin Activity classes responsible for screen logic
+ │
+ ├── src/main/res/layout/
+ │    └── XML layout files defining the user interface
+ │
+ ├── src/main/res/drawable/
+ │    └── Images and graphical assets (AMIP logo, icons, etc.)
+ │
+ └── src/main/AndroidManifest.xml
+      └── Application configuration and activity declarations
 🛠 Technologies
 Language: Kotlin
-Platform: Native Android
-UI: Android XML
-UI Components:
+Platform: Android Native
+User Interface: Android XML
+
+UI Components used:
+
 ScrollView
 LinearLayout
 RadioGroup
 Spinner
 EditText
 Button
+
 Build System: Gradle (Kotlin DSL – .kts)
-🎯 Purpose of the Project
 
-This application was developed to:
+🎯 Project Objective
 
-Improve data organization and accessibility
-Reduce manual census errors
-Provide a structured digital tool for community data collection
-Support data-driven decision making for the AMIP community.
+The goal of this project is to provide a digital tool for structured community data collection, helping local organizations:
+
+Improve data organization
+Reduce manual collection errors
+Facilitate demographic and social analysis
+Support community planning and decision-making.
