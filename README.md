@@ -43,8 +43,8 @@ The project follows the standard Android application architecture, separating ap
 Directory Overview
 Directory	Description
 java/com/example/projeto_ilha_primeira	Kotlin Activity classes responsible for application logic
-res/layout	XML files that define the UI of each screen
-res/drawable	Images, icons, and visual assets used in the application
+res/layout	XML files defining the user interface of each screen
+res/drawable	Images, icons, and graphical assets used in the application
 res/values	Application resources such as colors, styles, and themes
 AndroidManifest.xml	Main configuration file declaring activities and app settings
 Folder Structure
@@ -67,10 +67,21 @@ app/
       └── AndroidManifest.xml
             └── Application configuration and activity declarations
 🛠 Technologies
-Language: Kotlin
-Platform: Android Native Development
-UI Framework: Android XML Layouts
-Build System: Gradle (Kotlin DSL – .kts)
+Programming Language
+Kotlin
+Development Platform
+Android Native Development
+User Interface
+Android XML Layouts
+UI Components
+ScrollView
+LinearLayout
+RadioGroup
+Spinner
+EditText
+Button
+Build & Dependency Management
+Gradle (Kotlin DSL – .kts)
 🎯 Project Objective
 
 This project aims to provide a digital census tool for community organizations, helping to:
