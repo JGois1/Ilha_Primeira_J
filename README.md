@@ -1,49 +1,79 @@
-AMIP Census Project (Ilha Primeira)
-Team Members: João Gois, Caio Monteiro
+📱 AMIP Census App – Ilha Primeira
 
-A native Android application developed in Kotlin to serve as a census tool for the Associação de Moradores da Ilha Primeira (AMIP), located in Barra da Tijuca, Rio de Janeiro. The goal is to digitalize and streamline the collection of demographic, socioeconomic, and infrastructure data from residents in the region.
+Android application developed in Kotlin to support the census process of the Associação de Moradores da Ilha Primeira (AMIP), located in Barra da Tijuca, Rio de Janeiro – Brazil.
 
-Main Features
+The main objective of this project is to digitalize and simplify the collection of demographic, socioeconomic, and infrastructure data from residents of Ilha Primeira, replacing manual data collection with a structured digital system.
 
-The application guides the user through an intuitive and well-structured workflow:
+👥 Team
+João Gois
+Caio Monteiro
+🚀 Features
 
-Access Control
+The application provides a guided and structured census workflow, allowing users to collect and submit information efficiently.
 
-The system starts with authentication options, directing the user to either log in to an existing account or register as a new census taker/resident. After authentication, the home screen provides context about the purpose of the data collection.
+🔐 User Authentication
 
-Multi-Step Form
+The app starts with an authentication system where users can:
 
-To avoid overwhelming the user, the census is divided into 12 sequential screens, navigated using “Previous” and “Next” buttons.
+Log in with an existing account
+Register as a new census taker or resident
 
-The data collection covers essential topics such as:
+After authentication, the home screen presents the purpose of the census and instructions for the data collection process.
 
-Household Characteristics and Identification
-Work, Income, and Education
-Health (including Disabilities and Autism)
-Civil Registration, Marital Status, and Religion
-Completion
+📝 Multi-Step Census Form
 
-After completing the form, a confirmation screen is displayed to ensure the user that the information has been successfully recorded and submitted.
+To improve usability and prevent cognitive overload, the census questionnaire is divided into 12 sequential screens.
 
-Project Structure
+Navigation is handled through "Previous" and "Next" buttons, allowing users to review or edit previously entered information.
 
-The project follows the standard Android application structure:
+The questionnaire includes the following sections:
 
-app/src/main/java/com/example/projeto_ilha_primeira/
-Contains all Activity classes (written in Kotlin) responsible for controlling the logic of each screen.
+Household Identification and Housing Characteristics
+Employment and Income
+Education
+Health Information (including disabilities and autism)
+Civil Registration
+Marital Status
+Religion
+✅ Submission Confirmation
 
-app/src/main/res/layout/
-Contains all XML layout files that define the user interface of each Activity.
+After completing all steps, the application displays a confirmation screen, informing the user that the data has been successfully submitted and recorded.
 
-app/src/main/res/drawable/
-Stores the project's visual assets, such as the AMIP logo (imagem1.png), numbered question icons, and other graphical elements.
+🏗 Project Structure
 
-app/src/main/AndroidManifest.xml
-The manifest file that declares all Activities and the general configuration of the application.
+The project follows the standard Android application architecture.
 
-Technologies and Tools
-
+app
+ ├── src
+ │   ├── main
+ │   │   ├── java/com/example/projeto_ilha_primeira/
+ │   │   │   └── Activity classes (Kotlin)
+ │   │   │
+ │   │   ├── res
+ │   │   │   ├── layout/
+ │   │   │   │   └── XML files defining each screen UI
+ │   │   │   │
+ │   │   │   ├── drawable/
+ │   │   │   │   └── Images, icons, and visual assets
+ │   │   │
+ │   │   └── AndroidManifest.xml
+🛠 Technologies
 Language: Kotlin
 Platform: Native Android
-Interface: Android XML (using ScrollView, LinearLayout, RadioGroup, Spinner, EditText, and Button)
-Build System: Gradle (Kotlin DSL / .kts scripts)
+UI: Android XML
+UI Components:
+ScrollView
+LinearLayout
+RadioGroup
+Spinner
+EditText
+Button
+Build System: Gradle (Kotlin DSL – .kts)
+🎯 Purpose of the Project
+
+This application was developed to:
+
+Improve data organization and accessibility
+Reduce manual census errors
+Provide a structured digital tool for community data collection
+Support data-driven decision making for the AMIP community.
