@@ -4,18 +4,23 @@ A native Android application developed in Kotlin to support the census process o
 
 The purpose of this application is to digitalize and streamline the collection of demographic, socioeconomic, and infrastructure data from residents, replacing manual surveys with a structured and efficient mobile solution.
 
-👥 Team
-João Gois
-Caio Monteiro
-🚀 Key Features
-🔐 User Authentication
+## 👥 Team
+
+- João Gois  
+- Caio Monteiro  
+
+---
+
+## 🚀 Key Features
+
+### 🔐 User Authentication
 
 The application begins with an authentication flow where users can:
 
-Log in with an existing account
-Register a new account to participate in the census
+- Log in with an existing account  
+- Register a new account to participate in the census  
 
-After authentication, users are redirected to the home screen, where the purpose of the census and instructions for completing the questionnaire are presented.
+After authentication, users are redirected to the **home screen**, where the purpose of the census and instructions for completing the questionnaire are presented.
 
 📝 Multi-Step Census Form
 
