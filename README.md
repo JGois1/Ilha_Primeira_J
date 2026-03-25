@@ -67,21 +67,10 @@ app/
       └── AndroidManifest.xml
             └── Application configuration and activity declarations
 🛠 Technologies
-Language
-Kotlin
-Platform
-Android Native Development
-User Interface
-Android XML Layouts
-UI Components Used
-ScrollView
-LinearLayout
-RadioGroup
-Spinner
-EditText
-Button
-Build System
-Gradle (Kotlin DSL – .kts)
+Language: Kotlin
+Platform: Android Native Development
+UI Framework: Android XML Layouts
+Build System: Gradle (Kotlin DSL – .kts)
 🎯 Project Objective
 
 This project aims to provide a digital census tool for community organizations, helping to:
