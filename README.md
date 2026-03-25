@@ -1,8 +1,12 @@
-📱 AMIP Census App – Ilha Primeira
+# 📱 AMIP Census App – Ilha Primeira
 
-A native Android application developed in Kotlin to support the census process of the Associação de Moradores da Ilha Primeira (AMIP), located in Barra da Tijuca, Rio de Janeiro – Brazil.
+### Android Application for Community Census Data Collection
 
-The purpose of this application is to digitalize and streamline the collection of demographic, socioeconomic, and infrastructure data from residents, replacing manual surveys with a structured and efficient mobile solution.
+A native Android application developed in **Kotlin** to support the census process of the **Associação de Moradores da Ilha Primeira (AMIP)**, located in **Barra da Tijuca, Rio de Janeiro – Brazil**.
+
+The purpose of this application is to **digitalize and streamline the collection of demographic, socioeconomic, and infrastructure data** from residents, replacing manual surveys with a structured and efficient mobile solution.
+
+---
 
 ## 👥 Team
 
