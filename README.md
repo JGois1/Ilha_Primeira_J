@@ -1,42 +1,49 @@
-# Projeto Recenseamento AMIP (Ilha Primeira)
+AMIP Census Project (Ilha Primeira)
+Team Members: João Gois, Caio Monteiro
 
-## Integrantes: João Gois, Caio Monteiro
+A native Android application developed in Kotlin to serve as a census tool for the Associação de Moradores da Ilha Primeira (AMIP), located in Barra da Tijuca, Rio de Janeiro. The goal is to digitalize and streamline the collection of demographic, socioeconomic, and infrastructure data from residents in the region.
 
-Aplicativo Android nativo desenvolvido em **Kotlin** para atuar como ferramenta de recenseamento da Associação de Moradores da Ilha Primeira (AMIP), localizada na Barra da Tijuca, Rio de Janeiro. O objetivo é digitalizar e facilitar a coleta de dados demográficos, socioeconômicos e de infraestrutura dos moradores da região.
+Main Features
 
-## Principais Funcionalidades
+The application guides the user through an intuitive and well-structured workflow:
 
-O aplicativo guia o usuário através de um fluxo intuitivo e bem estruturado:
+Access Control
 
-**Controle de Acesso**
-O sistema inicia com opções de autenticação, direcionando o usuário para o login de contas existentes ou para a tela de cadastro de novos recenseadores/moradores. Após a autenticação, a tela inicial contextualiza o propósito da coleta de dados.
+The system starts with authentication options, directing the user to either log in to an existing account or register as a new census taker/resident. After authentication, the home screen provides context about the purpose of the data collection.
 
-**Formulário em Etapas**
-Para não sobrecarregar o usuário, o censo é dividido em 12 telas sequenciais, navegáveis através de botões "Anterior" e "Próximo". A coleta abrange temas essenciais como:
-* Características do Domicílio e Identificação
-* Trabalho, Rendimento e Educação
-* Saúde (incluindo PCD e Autismo)
-* Registro Civil, Nupcialidade e Religião
+Multi-Step Form
 
-**Conclusão**
-Ao finalizar o preenchimento, uma tela de confirmação é exibida para garantir ao usuário que os dados foram registrados e enviados com sucesso.
+To avoid overwhelming the user, the census is divided into 12 sequential screens, navigated using “Previous” and “Next” buttons.
 
----
+The data collection covers essential topics such as:
 
-## Estrutura do Projeto
+Household Characteristics and Identification
+Work, Income, and Education
+Health (including Disabilities and Autism)
+Civil Registration, Marital Status, and Religion
+Completion
 
-O projeto segue a estrutura padrão de um aplicativo Android:
+After completing the form, a confirmation screen is displayed to ensure the user that the information has been successfully recorded and submitted.
 
-* `app/src/main/java/com/example/projeto_ilha_primeira/`: Contém todas as classes de `Activity` (em Kotlin) que controlam a lógica de cada tela.
-* `app/src/main/res/layout/`: Contém todos os arquivos de layout (XML) que definem a interface de usuário de cada `Activity`.
-* `app/src/main/res/drawable/`: Armazena os assets visuais do projeto, como o logo da AMIP (`imagem1.png`), ícones de numeração das perguntas e outros elementos gráficos.
-* `app/src/main/AndroidManifest.xml`: Arquivo de manifesto que declara todas as `Activities` e a configuração geral do aplicativo.
+Project Structure
 
----
+The project follows the standard Android application structure:
 
-## Tecnologias e Ferramentas
+app/src/main/java/com/example/projeto_ilha_primeira/
+Contains all Activity classes (written in Kotlin) responsible for controlling the logic of each screen.
 
-**Linguagem:** Kotlin  
-**Plataforma:** Android Nativo  
-**Interface:** Android XML (utilizando `ScrollView`, `LinearLayout`, `RadioGroup`, `Spinner`, `EditText` e `Button`)  
-**Build System:** Gradle (Kotlin DSL / scripts `.kts`)
+app/src/main/res/layout/
+Contains all XML layout files that define the user interface of each Activity.
+
+app/src/main/res/drawable/
+Stores the project's visual assets, such as the AMIP logo (imagem1.png), numbered question icons, and other graphical elements.
+
+app/src/main/AndroidManifest.xml
+The manifest file that declares all Activities and the general configuration of the application.
+
+Technologies and Tools
+
+Language: Kotlin
+Platform: Native Android
+Interface: Android XML (using ScrollView, LinearLayout, RadioGroup, Spinner, EditText, and Button)
+Build System: Gradle (Kotlin DSL / .kts scripts)
