@@ -1,105 +1,94 @@
-# 📱 AMIP Census App – Ilha Primeira
+# 📱 Aplicativo de Censo AMIP – Ilha Primeira
 
-### Android Application for Community Census Data Collection
+### Aplicativo Android para Coleta de Dados Comunitários
 
-A native Android application developed in **Kotlin** to support the census process of the **Associação de Moradores da Ilha Primeira (AMIP)**, located in **Barra da Tijuca, Rio de Janeiro – Brazil**.
+Um aplicativo Android nativo desenvolvido em **Kotlin** para apoiar o processo de censo da **Associação de Moradores da Ilha Primeira (AMIP)**, localizada na **Barra da Tijuca, Rio de Janeiro – Brasil**.
 
-The purpose of this application is to **digitalize and streamline the collection of demographic, socioeconomic, and infrastructure data** from residents, replacing manual surveys with a structured and efficient mobile solution.
+O objetivo deste aplicativo é **digitalizar e otimizar a coleta de dados demográficos, socioeconômicos e de infraestrutura** dos moradores, substituindo pesquisas manuais por uma solução mobile estruturada e eficiente.
 
 ---
 
-## 👥 Team
+## 👥 Equipe
 
 - João Gois  
-- Caio Monteiro  
+- Caio Monteiro
+- Vanessa Nascimento
+- Douglas Silva
+- Marcus Vinícius
 
 ---
 
-## 🚀 Key Features
+## 🚀 Principais Funcionalidades
 
-### 🔐 User Authentication
+### 🔐 Autenticação de Usuário
 
-The application begins with an authentication flow where users can:
+O aplicativo inicia com um fluxo de autenticação onde os usuários podem:
 
-- Log in with an existing account  
-- Register a new account to participate in the census  
+- Fazer login com uma conta existente  
+- Criar uma nova conta para participar do censo  
 
-After authentication, users are redirected to the **home screen**, where the purpose of the census and instructions for completing the questionnaire are presented.
+Após a autenticação, os usuários são redirecionados para a **tela inicial**, onde são apresentadas a finalidade do censo e as instruções para o preenchimento do questionário.
 
-📝 Multi-Step Census Form
+---
 
-To improve usability and prevent user overload, the questionnaire is divided into 12 sequential screens.
+## 📝 Formulário de Censo em Múltiplas Etapas
 
-Users navigate through the census using “Previous” and “Next” buttons, allowing them to review and edit previously entered information.
+Para melhorar a usabilidade e evitar sobrecarga ao usuário, o questionário foi dividido em 12 telas sequenciais.
 
-The census collects data about:
+Os usuários navegam pelo censo utilizando os botões “Anterior” e “Próximo”, permitindo revisar e editar informações previamente preenchidas.
 
-Household identification and housing characteristics
-Employment and income
-Education
-Health conditions (including disabilities and autism)
-Civil registration
-Marital status
-Religion
-✅ Data Submission
+O censo coleta dados sobre:
 
-Once all steps are completed, the application displays a confirmation screen, informing the user that the information has been successfully recorded and submitted.
+- Identificação familiar e características da moradia  
+- Emprego e renda  
+- Educação  
+- Condições de saúde (incluindo deficiências e autismo)  
+- Registro civil  
+- Estado civil  
+- Religião  
 
-🏗 Project Structure
+---
 
-The project follows the standard Android application architecture, separating application logic, user interface layouts, and application resources.
+## ✅ Envio de Dados
 
-Directory Overview
-Directory	Description
-java/com/example/projeto_ilha_primeira	Kotlin Activity classes responsible for application logic
-res/layout	XML files defining the user interface of each screen
-res/drawable	Images, icons, and graphical assets used in the application
-res/values	Application resources such as colors, styles, and themes
-AndroidManifest.xml	Main configuration file declaring activities and app settings
-Folder Structure
+Após a conclusão de todas as etapas, o aplicativo exibe uma tela de confirmação informando que os dados foram registrados e enviados com sucesso.
+
+---
+
+# 🏗 Estrutura do Projeto
+
+O projeto segue a arquitetura padrão de aplicações Android, separando a lógica da aplicação, layouts da interface do usuário e recursos do aplicativo.
+
+## 📂 Visão Geral dos Diretórios
+
+| Diretório | Descrição |
+|---|---|
+| `java/com/example/projeto_ilha_primeira` | Classes Activity em Kotlin responsáveis pela lógica da aplicação |
+| `res/layout` | Arquivos XML que definem a interface de cada tela |
+| `res/drawable` | Imagens, ícones e recursos gráficos utilizados no aplicativo |
+| `res/values` | Recursos da aplicação como cores, estilos e temas |
+| `AndroidManifest.xml` | Arquivo principal de configuração com atividades e definições do app |
+
+---
+
+## 📁 Estrutura de Pastas
+
+```txt
 app/
  └── src/main/
 
       ├── java/com/example/projeto_ilha_primeira/
-      │     └── Activities written in Kotlin
+      │     └── Activities desenvolvidas em Kotlin
       │
       ├── res/
       │     ├── layout/
-      │     │     └── Screen UI definitions (XML)
+      │     │     └── Definições de interface das telas (XML)
       │     │
       │     ├── drawable/
-      │     │     └── Images and graphical assets
+      │     │     └── Imagens e recursos gráficos
       │     │
       │     └── values/
-      │           └── Colors, styles and themes
+      │           └── Cores, estilos e temas
       │
       └── AndroidManifest.xml
-            └── Application configuration and activity declarations
-## 🛠 Technologies
-
-### Programming Language
-- Kotlin
-
-### Development Platform
-- Android Native Development
-
-### User Interface
-- Android XML Layouts
-
-### UI Components
-- ScrollView  
-- LinearLayout  
-- RadioGroup  
-- Spinner  
-- EditText  
-- Button  
-
-### Build & Dependency Management
-- Gradle (Kotlin DSL – `.kts`)
-
-This project aims to provide a digital census tool for community organizations, helping to:
-
-Improve data organization
-Reduce manual data collection errors
-Facilitate demographic and socioeconomic analysis
-Support community planning and decision-making
+            └── Configurações da aplicação e declaração das Activities
